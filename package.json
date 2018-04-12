@@ -6,20 +6,12 @@
   "author": "Alex MacArthur <alex@macarthur.me> (https://macarthur.me)",
   "scripts": {
     "dev": "NODE_ENV=development parcel index.html",
-    "build": "NODE_ENV=production parcel build index.html --no-minify"
+    "build": "NODE_ENV=production parcel build index.html"
   },
   "bugs": {
     "url": "https://github.com/alexmacarthur/wp-vue/issues"
   },
   "homepage": "https://wp.netlify.com",
-  "dependencies": {
-    "axios": "^0.17.1",
-    "babel-runtime": "^6.26.0",
-    "vue": "^2.5.9",
-    "vue-analytics": "^5.7.1",
-    "vue-router": "^3.0.1",
-    "vuex": "^3.0.1"
-  },
   "keywords": [
     "vue",
     "wordpress",
@@ -27,13 +19,21 @@
     "REST",
     "API"
   ],
+  "dependencies": {
+    "axios": "^0.17.1",
+    "vue": "^2.5.9",
+    "vue-analytics": "^5.7.1",
+    "vue-hot-reload-api": "^2.3.0",
+    "vue-router": "^3.0.1",
+    "vuex": "^3.0.1"
+  },
   "devDependencies": {
-    "babel-plugin-transform-async-to-generator": "^6.24.1",
-    "babel-plugin-transform-runtime": "^6.23.0",
+    "@vue/component-compiler-utils": "^1.0.0",
+    "babel-core": "^6.26.0",
     "babel-preset-env": "^1.6.1",
     "node-sass": "^4.7.2",
-    "parcel-bundler": "^1.0.3",
-    "parcel-plugin-vue": "^1.4.0"
+    "parcel-bundler": "^1.7.0",
+    "vue-template-compiler": "^2.5.16"
   },
   "main": "src/main.js",
   "repository": {
